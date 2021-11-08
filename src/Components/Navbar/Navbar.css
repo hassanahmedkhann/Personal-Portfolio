@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.thenavbar {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  height: max-content;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: 0.2s;
+}
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 20px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title:hover {
+  cursor: pointer;
+}
+
+.navitems ul {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  transform: translateX(100%);
+}
+.active {
+  animation: movein 0.5s ease-in forwards;
+}
+
+.active2 {
+  animation: moveout 0.5s ease-in forwards;
+}
+
+@keyframes moveout {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes movein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+  /* 100% {
+    transform: translateX(-0%);
+  } */
+}
+.navitems ul li {
+  list-style: none;
+}
+.navitems ul li a {
+  padding: 0px 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.navitems li:hover {
+  /* border-bottom: 1px black solid; */
+  background-color: #656e7a;
+  transition: 0.2s;
+  color: white;
+}
+.navitems li a:hover {
+  /* border-bottom: 1px black solid; */
+  transition: 0.2s;
+  color: white;
+}
+
+.hamber {
+  position: absolute;
+  right: 1.5rem;
+  top: 0.75rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+}
+
+.hamber .bar {
+  height: 3px;
+  width: 100%;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.bgc {
+  transition: 0.3s;
+  background-color: #f8f9fe;
+}
+/* @media (max-width: 400px) { */
+
+.navitems {
+  width: 100%;
+  /* display: none; */
+}
+
+.thenavbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navitems ul {
+  flex-direction: column;
+  width: 100%;
+}
+.navitems ul li {
+  width: 100%;
+  text-align: center;
+  /* border-bottom: 1px solid grey; */
+}
+.first {
+  border-top: 1px solid black;
+}
+
+.hamber:hover > * {
+  transition: 0.3s;
+  animation: spin 2s infinite linear;
+  background-color: khaki;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

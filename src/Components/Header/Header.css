@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid {
+  height: 100%;
+}
+.header-row {
+  height: 100%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.right {
+  height: 100%;
+}
+.btnclass {
+  background-color: #eeeeff;
+  border-color: #eeeeff;
+  color: whitesmoke;
+}
+.text {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.wrapper-shape {
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  height: 100%;
+  background-color: #384147;
+  margin: 0;
+  padding: 0;
+  animation: slide2 1s alternate;
+}
+.wrapper-shape::-webkit-scrollbar {
+  /* display: none; */
+}
+.headdd {
+  height: 100vh;
+}
+.thel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  clip-path: circle(23.7% at 50% 50%);
+  background-image: url("../Images/me.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+.circle:hover {
+  transition: 0.5s;
+  clip-path: circle(27.6% at 50% 50%);
+}
+.title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.item {
+  margin: 5px;
+  height: 60px;
+}
+
+.mover {
+  width: 100%;
+  padding-top: 5px;
+  height: 60px;
+
+  animation: move 10s ease-in-out infinite 1s alternate;
+}
+@keyframes move {
+  35% {
+    transform: translateY(-55px);
+  }
+  70% {
+    transform: translateY(-125px);
+  }
+  100% {
+    transform: translateY(-185px);
+  }
+}
+.mobtn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movebtn:hover {
+  background-color: white;
+  color: #5c636a;
+}
+
+@media screen and (max-width: 600px) {
+  .ther {
+    height: 300px;
+  }
+  .thel {
+    margin-top: 100px;
+  }
+}
+.left-text {
+  animation: slideinn 1s alternate;
+}
+@keyframes slideinn {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(-1000px);
+  }
+}
+.left-text::-webkit-scrollbar {
+  display: none;
+}
+.themainc::-webkit-scrollbar {
+  display: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}

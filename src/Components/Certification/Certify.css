@@ -1,0 +1,32 @@
+.theimage {
+  width: 100%;
+  height: 80%;
+}
+.imagediv {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 400px;
+  transition: 0.2s;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  overflow-y: scroll;
+}
+.imagediv::-webkit-scrollbar {
+  display: none;
+}
+.textwrapper {
+  text-align: center;
+  width: 100%;
+  background-color: #f5ece7;
+}
+
+.imagediv:hover {
+  transition: 0.2s;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}

@@ -1,0 +1,286 @@
+.bor {
+  border: 1px solid black;
+}
+
+.about-row {
+  height: max-content;
+  margin: 0px 10px;
+  overflow: hidden;
+  padding: 150px 20px;
+}
+
+.circle2 {
+  clip-path: circle(38.6% at 50% 50%);
+
+  background-repeat: no-repeat;
+  background-image: url("../Images/myimg.png");
+  width: 100%;
+  background-size: contain;
+  background-color: grey;
+  background-position: center;
+  height: 40vh;
+  transition: 0.3s;
+}
+.circle2:hover {
+  transition: 0.3s;
+  clip-path: circle(41.2% at 50% 50%);
+}
+.megainfo {
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  overflow-x: scroll;
+  justify-content: flex-start;
+  height: max-content;
+}
+.megainfo::-webkit-scrollbar {
+  display: none;
+}
+
+.info {
+  height: 500px;
+  padding-top: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.superinfo {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.moveup {
+  animation: 1s moveup alternate;
+}
+
+@keyframes moveup {
+  to {
+    transform: translateY();
+  }
+  from {
+    transform: translateY(70px);
+  }
+}
+
+.lbox {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+.rbox {
+  margin-top: 30px;
+  padding: 0px 10px;
+  border-radius: 20px;
+  background-color: #f8f9fe;
+  height: max-content;
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s;
+  box-shadow: 5px 5px 25px rgba(121, 87, 87, 0.2);
+}
+.rbox:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+
+.btn {
+  min-width: 150px;
+}
+.wrapper2 {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  width: 300px;
+  height: 300px;
+  background-color: #f8f9fe;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide {
+  animation: 1s slide alternate;
+}
+.slide2 {
+  animation: 1.5s slide2 alternate;
+}
+.wrapper2:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+@keyframes slide {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(-500px);
+  }
+}
+@keyframes slide2 {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(1000px);
+  }
+}
+
+.firstdiv {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.childs {
+  flex: 1;
+  flex: 250px;
+}
+
+.animate-charcter {
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    /* #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100% */ #f5ece7 0%,
+    grey 29%,
+    black 67%,
+    #f5ece7 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+.desc {
+  font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .desc {
+    font-size: 20px;
+  }
+  .lbox {
+    margin-bottom: 50px;
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  background-color: #6c757d;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+  max-height: 50px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.icon {
+  width: 15%;
+  height: 100%;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: grey;
+  background-color: whitesmoke;
+  transition: 0.2s;
+}
+
+.quote {
+  height: 110px;
+  text-align: center;
+  overflow-y: hidden;
+  padding: 0px 20px;
+}
+.quote p {
+  font-size: 25px;
+}
+.nameof {
+  font-weight: 700;
+}
+.quotes {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mover2 {
+  animation: moving 10s alternate 1s ease-in-out infinite forwards;
+}
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-110px);
+  }
+  66% {
+    transform: translateY(-215px);
+  }
+  100% {
+    transform: translateY(-310px);
+  }
+}
+
+.mark {
+  max-width: 100px;
+  margin-bottom: 100px;
+  border: 5px solid black;
+  border-radius: 30px;
+}

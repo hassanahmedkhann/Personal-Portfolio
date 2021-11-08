@@ -1,0 +1,26 @@
+.megacertify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.certify {
+  display: flex;
+  overflow-x: scroll;
+  height: 80vh;
+  padding-top: 20px;
+  padding-left: 20px;
+  overflow-y: hidden;
+}
+
+.certify::-webkit-scrollbar {
+  display: none;
+}
+
+.eachcertify {
+  margin-right: 30px;
+}
+
+.text-header {
+  text-align: center;
+}

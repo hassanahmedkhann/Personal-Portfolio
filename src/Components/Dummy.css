@@ -1,0 +1,32 @@
+.footerhead {
+  padding: 30px 0px;
+  background-color: #f8f9fe;
+  height: max-content;
+  text-align: center;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+}
+.socialicons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 250px;
+}
+.animate {
+  overflow-y: hidden;
+}
+.footerwrap {
+  padding: 0px 20px;
+  flex: 1 250px;
+}
+.icon {
+  max-width: 35px;
+  max-height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+}
+.copyicon {
+  display: inline-block;
+}

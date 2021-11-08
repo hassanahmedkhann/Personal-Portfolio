@@ -1,0 +1,22 @@
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: max-content;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  overflow: hidden;
+}
+.eachcard {
+  margin: 20px;
+}
+.cardtext {
+  margin-top: 20px;
+  height: 100px;
+}

@@ -1,0 +1,84 @@
+.main-contact {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  overflow-x: hidden;
+}
+.child {
+  flex: 1 1 250px;
+}
+.leftcontact {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+}
+.rightcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 250px;
+  padding: 20px 0px;
+}
+.lefttextwrap {
+  margin-top: -100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.icon {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.iconwrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.texthover {
+  border: 1px solid white;
+  color: black;
+  transition: 0.2s;
+  font-weight: 800;
+  background-color: white;
+}
+.theform {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+}
+textarea {
+  margin: 10px 0px;
+  padding: 10px;
+  width: 300px;
+}
+
+.fazul {
+  font-weight: bold;
+  font-size: 35px;
+}
+@media only screen and (max-width: 500px) {
+  .leftcontact {
+    margin-top: 100px;
+  }
+  .sendbtn {
+    padding-top: 10px;
+  }
+}
