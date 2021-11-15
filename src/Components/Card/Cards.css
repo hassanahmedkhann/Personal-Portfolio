@@ -4,6 +4,7 @@
   justify-content: center;
   width: 100%;
   height: max-content;
+  padding: 20px 0px;
 }
 .main-container {
   display: flex;
@@ -19,4 +20,21 @@
 .cardtext {
   margin-top: 20px;
   height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: left;
+  }
+  .main-container {
+    display: flex;
+    width: auto;
+  }
+  .eachcard {
+    min-width: 300px;
+  }
 }

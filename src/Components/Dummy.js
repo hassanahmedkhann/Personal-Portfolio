@@ -9,7 +9,7 @@ function Dummy() {
   const [show, setshow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 5550) {
+      if (window.scrollY > 5700) {
         setshow(true);
       } else {
         setshow(false);
@@ -27,28 +27,28 @@ function Dummy() {
               Hassan Ahmed Khan.
             </span>
             <h5>
-              Copyright <h1 className="copyicon">©️</h1> 2021 Hassan Ahmed Khan
-              | All Rights Reserved.
+              Copyright <span className="copyicon">©️</span> 2021 Hassan Ahmed
+              Khan | All Rights Reserved.
             </h5>
           </div>
           <div className="socialicons">
-            <a href="" alt="FB Icon">
-              <img src={fb} className="icon" />
+            <a href="https://www.facebook.com/theycallmekhan/" alt="FB Icon">
+              <img src={fb} className="icon" alt="img" />
             </a>
             <a
               href="https://www.instagram.com/hassanahmedkhann/"
               alt="Insta Icon"
             >
-              <img src={insta} className="icon" />
+              <img src={insta} className="icon" alt="img" />
             </a>
             <a
               href="https://www.linkedin.com/in/hassan-ahmed-khan-937210202/"
               alt="LinkedIn Icon"
             >
-              <img src={li} className="icon" />
+              <img src={li} className="icon" alt="img" />
             </a>
             <a href="mailto:itshakhere@gmail.com" alt="Email Icon">
-              <img src={em} className="icon" />
+              <img src={em} className="icon" alt="img" />
             </a>
           </div>
         </div>

@@ -5,27 +5,29 @@ function Quotes() {
   return (
     <div>
       <div className="quotes">
-        <img className="mark" src={mark} />
+        <img className="mark" src={mark} alt="img" />
         <div className="quote">
           <div className="mover2">
-            <p>
+            <div className="p">
               The most damaging phrase in the language is "Its always been done
               this way".
-            </p>
-            <p className="nameof">- Grace Hopper</p>
+              <span className="nameof">- Grace Hopper</span>
+            </div>
 
-            <p>
+            <div className="p">
               There are two ways to write error-free programs, only the third
               one works.
-            </p>
-            <p className="nameof">-Lou Gerstner</p>
-            <p>
+              <span className="nameof">-Lou Gerstner</span>
+            </div>
+            <div className="p">
               The one who said it can't be done should not disturb the one doing
               it.
-            </p>
-            <p className="nameof">-William Bentler</p>
-            <p>No code has zero defects.</p>
-            <p className="nameof">-Ashton Turner</p>
+              <span className="nameof">-William Bentler</span>
+            </div>
+            <div className="p">
+              No code has zero defects.
+              <span className="nameof">-Ashton Turner</span>
+            </div>
           </div>
         </div>
       </div>

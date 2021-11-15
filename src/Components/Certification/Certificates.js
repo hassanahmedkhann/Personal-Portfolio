@@ -7,7 +7,7 @@ function Certificates() {
   const [show, setshow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 4100) {
+      if (window.scrollY > 4350) {
         setshow(true);
       } else {
         setshow(false);
@@ -21,11 +21,11 @@ function Certificates() {
           <h1>Some Certifications.</h1>
         </div>
         <div className="certify">
-          {details.map((item) => (
+          {details.map((item, i) => (
             <>
-              <div className={`eachcertify ${show && "moveup"}`}>
+              <div key={i} className={`eachcertify ${show && "moveup"}`}>
                 <Certify
-                  key={item.id}
+                  key={i}
                   title={item.title}
                   company={item.company}
                   imgsrc={item.imgsrc}

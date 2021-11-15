@@ -4,11 +4,17 @@ import pi from "../Images/pi.png";
 import ei from "../Images/ei.png";
 import li from "../Images/li.png";
 import git from "../Images/git.png";
-
+import { db } from "../../firebase-config";
 import { useState, useEffect } from "react";
+import { doc, setDoc } from "@firebase/firestore";
 
 function Contact() {
   const [show, setshow] = useState(false);
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [msg, setMsg] = useState("");
+  // const dbRef = collection(db, "Messages");
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 5050) {
@@ -20,16 +26,25 @@ function Contact() {
   }, []);
   const [flag, setflag] = useState(true);
 
-  function handleSubmit(e) {
-    const form = document.querySelector(".theform");
+  const handlesend = async (e) => {
     e.preventDefault();
+    const data = {
+      Name: name,
+      Email: email,
+      Message: msg,
+    };
+    const thedoc = doc(db, "Messages", email);
 
+    // await addDoc(dbRef, data);
+    await setDoc(thedoc, data, { merge: true });
     setflag(false);
     setTimeout(() => {
       setflag(true);
     }, 3000);
+    const form = document.querySelector(".theform");
     form.reset();
-  }
+    return;
+  };
 
   return (
     <>
@@ -48,17 +63,16 @@ function Contact() {
                 href="mailto: itshakhere@gmail.com"
                 alt=""
               >
-                {" "}
                 <img className="icon" alt="img" src={ei} />
                 <h4>itshakhere@gmail.com</h4>
               </a>
             </div>
             <div className="iconwrap">
-              <img alt="img" className="icon" src={pi} />
+              <img className="icon" src={pi} alt="img" />
               <h4 className="texthover">0330-2564568</h4>
             </div>
             <div className="iconwrap">
-              <img alt="img" className="icon" src={li} />
+              <img className="icon" src={li} alt="img" />
               <a
                 style={{ textDecoration: "none", color: "black" }}
                 href="https://www.linkedin.com/in/hassan-ahmed-khan-937210202/"
@@ -67,7 +81,7 @@ function Contact() {
               </a>
             </div>
             <div className="iconwrap">
-              <img alt="img" className="icon" src={git} />
+              <img className="icon" src={git} alt="img" />
               <a
                 style={{ textDecoration: "none", color: "black" }}
                 href="https://github.com/hassanahmedkhann"
@@ -78,23 +92,30 @@ function Contact() {
           </div>
         </div>
         <div className={`rightcontact child  ${show && "slide2"}`}>
-          <form onSubmit={handleSubmit} className="theform">
+          <form onSubmit={handlesend} className="theform">
             <h1>Send me a Message.</h1>
             <input
               placeholder="Email"
               type="email"
               className="input"
-              name="user_email"
+              required
+              onChange={(event) => setEmail(event.target.value)}
             />
 
             <input
+              required
               placeholder="Name"
               type="text"
               className="input"
-              name="user_name"
+              onChange={(event) => setName(event.target.value)}
             />
 
-            <textarea placeholder="Your Message" rows="5" name="message" />
+            <textarea
+              required
+              placeholder="Your Message"
+              rows="5"
+              onChange={(event) => setMsg(event.target.value)}
+            />
             {flag && (
               <button
                 type="submit"
@@ -104,9 +125,9 @@ function Contact() {
               </button>
             )}
             {!flag && (
-              <button type="submit" className="btn btn-success movebtn sendbtn">
+              <span type="submit" className="btn btn-success movebtn sendbtn">
                 Sent!
-              </button>
+              </span>
             )}
           </form>
         </div>

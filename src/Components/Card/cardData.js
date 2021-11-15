@@ -35,10 +35,10 @@ export const Data = [
   {
     id: 4,
 
-    title: "Firebase CRUD REACT",
+    title: "Firebase CRUD-REACT",
     imgsrc: four,
     desc: "React App with integrated firebase-Firestore connectivity for Create, Read, Update and Delete ( CRUD ) operations.",
-    link: "https://silly-pike-18df4d.netlify.app/",
+    link: "https://todolist-app-22dc0.web.app/",
   },
   {
     id: 5,
@@ -51,16 +51,17 @@ export const Data = [
   {
     id: 6,
 
-    title: "SignUp Form",
+    title: "User Authentication Firebase-React",
     imgsrc: six,
-    desc: "This is a sign up form made with React and Firebase. Used Firebase Authentication.",
+    desc: "User Authentication using firebase with React JS. CRUD Operations with User specific entry.",
+    link: "https://authentication-redux-91bc5.web.app",
   },
   {
     id: 7,
 
     title: "Student Profile Portal",
     imgsrc: ten,
-    desc: "Made on Vanilla JS. A Student portal that handles course registration.",
+    desc: "Made with Vanilla JS. A Student portal that handles course registration for students.",
     link: "https://keen-thompson-646331.netlify.app/",
   },
   {
@@ -68,7 +69,7 @@ export const Data = [
 
     title: "Contact From",
     imgsrc: seven,
-    desc: "A simple Contact Form using Firebase. The data is written in the Realtime Database.",
+    desc: "A simple Contact Form using Firebase. The data is written in the Realtime Firestore Database.",
     link: "https://hardcore-leavitt-63be27.netlify.app/",
   },
   {

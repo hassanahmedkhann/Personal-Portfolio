@@ -20,8 +20,8 @@ function Cards() {
         <div className="cardtext">
           <h1 style={{ fontSize: "35px" }}>Some of the Projects I've made.</h1>
         </div>
-        <div className={`holder ${show && "moveup"}`}>
-          {Data.map((items) => (
+        <div className={` holder ${show && "moveup"}`}>
+          {Data.map((items, i) => (
             <>
               <div className="eachcard">
                 <Card

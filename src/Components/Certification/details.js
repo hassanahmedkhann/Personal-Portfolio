@@ -1,4 +1,3 @@
-import React from "react";
 import js from "../Images/js.PNG";
 import react from "../Images/react.PNG";
 import html from "../Images/html.png";

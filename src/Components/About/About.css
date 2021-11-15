@@ -55,10 +55,12 @@
 
 @keyframes moveup {
   to {
+    opacity: 1;
     transform: translateY();
   }
   from {
-    transform: translateY(70px);
+    opacity: 0;
+    transform: translateY(100px);
   }
 }
 
@@ -117,17 +119,21 @@
 }
 @keyframes slide {
   to {
+    opacity: 1;
     transform: translateX(0);
   }
   from {
+    opacity: 0;
     transform: translateX(-500px);
   }
 }
 @keyframes slide2 {
   to {
+    opacity: 1;
     transform: translateX(0);
   }
   from {
+    opacity: 0;
     transform: translateX(1000px);
   }
 }
@@ -242,16 +248,21 @@
 }
 
 .quote {
-  height: 110px;
+  height: 200px;
   text-align: center;
   overflow-y: hidden;
   padding: 0px 20px;
 }
-.quote p {
+.p {
   font-size: 25px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .nameof {
   font-weight: 700;
+  display: block;
 }
 .quotes {
   height: 600px;
@@ -267,14 +278,17 @@
   0% {
     transform: translateY(0);
   }
+
   33% {
-    transform: translateY(-110px);
+    transform: translateY(-200px);
   }
+
   66% {
-    transform: translateY(-215px);
+    transform: translateY(-400px);
   }
+
   100% {
-    transform: translateY(-310px);
+    transform: translateY(-600px);
   }
 }
 

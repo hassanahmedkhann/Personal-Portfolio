@@ -66,10 +66,8 @@
 .navitems ul li {
   list-style: none;
 }
-.navitems ul li a {
-  padding: 0px 10px;
-  margin-right: 10px;
-  font-size: 20px;
+.navitems ul a {
+  font-size: 25px;
   color: black;
   text-decoration: none;
 }

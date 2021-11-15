@@ -8,7 +8,6 @@ import resume from "../files/react.pdf";
 import ds from "../files/ds.pdf";
 import cv from "../files/cv.pdf";
 import pdf from "../Images/pdf.png";
-import mark from "../Images/mark.jpg";
 
 function About() {
   const [show, setshow] = useState(false);
@@ -70,19 +69,19 @@ function About() {
                 </span>
               </p>
             </div>
-            <div class="dropdown">
-              <button class="dropbtn">
-                <img className="icon" src={pdf} />
+            <div className="dropdown">
+              <button className="dropbtn">
+                <img className="icon" src={pdf} alt="img" />
                 Download Resume
               </button>
-              <div class="dropdown-content">
-                <a href={resume} target="_blank">
+              <div className="dropdown-content">
+                <a href={resume} target="_blank" rel="noreferrer">
                   Front-End Development
                 </a>
-                <a href={ds} target="_blank">
+                <a href={ds} target="_blank" rel="noreferrer">
                   Data Science/Analysis
                 </a>
-                <a href={cv} target="_blank">
+                <a href={cv} target="_blank" rel="noreferrer">
                   CV
                 </a>
               </div>

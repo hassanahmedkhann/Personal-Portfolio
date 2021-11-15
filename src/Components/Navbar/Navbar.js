@@ -15,20 +15,16 @@ function Navbar() {
       togglebtn.classList.toggle("bgc");
 
       active2 = true;
-      console.log("Here 1:", navitems.classList);
       //   togglebtn.classList.toggle(".bgc");
-    } else if (!navitems.classList.contains("active") && active2 == false) {
+    } else if (!navitems.classList.contains("active") && active2 === false) {
       navitems.classList.toggle("active");
       togglebtn.classList.toggle("bgc");
-      console.log("Here 2:", navitems.classList);
-      console.log("Here Toggle", togglebtn);
     } else if (navitems.classList.contains("active2")) {
       navitems.classList.toggle("active2");
       navitems.classList.toggle("active");
       togglebtn.classList.toggle("bgc");
 
       active2 = false;
-      console.log("Here 3:", navitems.classList);
       //   togglebtn.classList.toggle(".bgc");
     }
   }
@@ -39,34 +35,28 @@ function Navbar() {
         <a style={{ textDecoration: "none", color: "black" }} href="#home">
           <div className="title">Portfolio</div>
         </a>
-        <a onClick={handleclick} className="hamber">
+        <span onClick={handleclick} className="hamber">
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
-        </a>
+        </span>
         <div className="navitems">
           <ul className="unlist">
-            <li className="first">
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a exact href="#aboutme" alt="">
-                About Me
-              </a>
-            </li>
-            <li>
-              <a href="#cards" alt="">
-                My Work
-              </a>
-            </li>
-            <li>
-              <a href="#certificates">Certifications</a>
-            </li>
-            <li className="last">
-              <a href="#contactme" alt="">
-                Contact
-              </a>
-            </li>
+            <a href="#home">
+              <li className="first">Home</li>
+            </a>
+            <a href="#aboutme" alt="">
+              <li>About Me</li>
+            </a>
+            <a href="#cards" alt="">
+              <li>My Work</li>
+            </a>
+            <a href="#certificates">
+              <li> Certifications</li>
+            </a>
+            <a href="#contactme" alt="">
+              <li className="last">Contact</li>
+            </a>
           </ul>
         </div>
       </nav>
