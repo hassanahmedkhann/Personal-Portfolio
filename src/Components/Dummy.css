@@ -15,7 +15,7 @@
   flex: 1 250px;
 }
 .animate {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .footerwrap {
   padding: 0px 20px;

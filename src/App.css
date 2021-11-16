@@ -4,5 +4,15 @@
   padding: 0;
 }
 .app::-webkit-scrollbar {
-  display: block;
+  display: none;
+}
+.app {
+  overflow-x: hidden;
+}
+.scroll {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.margin {
+  margin-top: 200px;
 }

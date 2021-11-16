@@ -8,6 +8,7 @@ import resume from "../files/react.pdf";
 import ds from "../files/ds.pdf";
 import cv from "../files/cv.pdf";
 import pdf from "../Images/pdf.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function About() {
   const [show, setshow] = useState(false);
@@ -40,8 +41,12 @@ function About() {
           <div className="lbox col-sm-3 col-12">
             <div style={{ padding: "10px" }} className="row">
               <div
-                style={{ textAlign: "center", fontSize: "40px" }}
-                className="col-12 animate-charcter"
+                style={{
+                  textAlign: "center",
+                  fontSize: "40px",
+                  fontWeight: "600",
+                }}
+                className="col-12 "
               >
                 About Me
               </div>

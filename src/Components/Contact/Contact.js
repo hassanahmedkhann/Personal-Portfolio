@@ -7,6 +7,7 @@ import git from "../Images/git.png";
 import { db } from "../../firebase-config";
 import { useState, useEffect } from "react";
 import { doc, setDoc } from "@firebase/firestore";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Contact() {
   const [show, setshow] = useState(false);
@@ -49,8 +50,9 @@ function Contact() {
   return (
     <>
       <div id="contactme" className="main-contact container-fluid">
-        <div className={`leftcontact child ${show && "slide"}`}>
-          <div className="lefttextwrap">
+        {/* <div className={`leftcontact child ${show && "slide"}`}> */}
+        <div className="leftcontact child">
+          <div className=" lefttextwrap">
             <span className="fazul">Get in touch with me!</span>
             <div className="iconwrap">
               <a
@@ -91,7 +93,9 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className={`rightcontact child  ${show && "slide2"}`}>
+
+        {/* <div className={`rightcontact child  ${show && "slide2"}`}> */}
+        <div className="rightcontact child">
           <form onSubmit={handlesend} className="theform">
             <h1>Send me a Message.</h1>
             <input

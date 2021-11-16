@@ -33,7 +33,10 @@ function Navbar() {
     <>
       <nav className="thenavbar">
         <a style={{ textDecoration: "none", color: "black" }} href="#home">
-          <div className="title">Portfolio</div>
+          <div className="title animate-charcter">
+            {/* <img className="logo" src={logo} alt="logo"></img> */}
+            HAK
+          </div>
         </a>
         <span onClick={handleclick} className="hamber">
           <span className="bar"></span>

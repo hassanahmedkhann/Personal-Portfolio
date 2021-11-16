@@ -49,17 +49,18 @@
   align-items: center;
 }
 .circle {
-  clip-path: circle(23.7% at 50% 50%);
-  background-image: url("../Images/me.jpg");
+  clip-path: circle(30% at 50% 50%);
+  background-image: url("../Images/me4.jpg");
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: bottom;
   transition: 0.5s;
 }
 .circle:hover {
   transition: 0.5s;
-  clip-path: circle(27.6% at 50% 50%);
+  clip-path: circle(35% at 50% 50%);
 }
 .title-wrapper {
   width: 100%;

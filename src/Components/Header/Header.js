@@ -1,5 +1,6 @@
 import "./Header.css";
 import React from "react";
+import GlitchClip from "react-glitch-effect/core/GlitchClip";
 
 function Header() {
   return (
@@ -10,7 +11,9 @@ function Header() {
             <div className="left-text">
               <h2>Hey! Welcome.</h2>
               <h2>My name is</h2>
-              <h1 style={{ fontWeight: "bold" }}>Hassan Ahmed Khan</h1>
+              <GlitchClip duration={1850}>
+                <h1 style={{ fontWeight: "bold" }}>Hassan Ahmed Khan</h1>
+              </GlitchClip>
               <div className="title-wrapper">
                 <div className="mover">
                   <div className="item ">
