@@ -3,10 +3,10 @@
   padding: 0;
 }
 .container-fluid {
-  height: 100%;
+  height: max-content;
 }
 .header-row {
-  height: 100%;
+  height: max-content;
 }
 .left {
   display: flex;
@@ -111,9 +111,10 @@
   color: #5c636a;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 762px) {
   .ther {
-    height: 300px;
+    margin-top: 20px;
+    height: 350px;
   }
   .thel {
     margin-top: 100px;

@@ -38,6 +38,7 @@ function Dummy() {
               <a href="https://www.facebook.com/theycallmekhan/" alt="FB Icon">
                 <img src={fb} className="icon" alt="img" />
               </a>
+
               <a
                 href="https://www.instagram.com/hassanahmedkhann/"
                 alt="Insta Icon"

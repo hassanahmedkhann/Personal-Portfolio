@@ -82,4 +82,10 @@ textarea {
   .sendbtn {
     padding-top: 10px;
   }
+  textarea {
+    width: 290px;
+  }
+  input {
+    width: 290px;
+  }
 }

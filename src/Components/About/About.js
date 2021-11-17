@@ -36,9 +36,9 @@ function About() {
   }, []);
   return (
     <>
-      <div id="aboutme" className=" container-fluid aboutheader mt-5">
-        <div className="about-row row">
-          <div className="lbox col-sm-3 col-12">
+      <div id="aboutme" className="container-fluid aboutheader mt-5">
+        <div className=" about-row row">
+          <div className=" lbox col-lg-4 col-12 ">
             <div style={{ padding: "10px" }} className="row">
               <div
                 style={{
@@ -56,7 +56,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className={`rbox col-sm-9 col-12  ${show && "slide2"}`}>
+          <div className={`rbox col-lg-8 col-12  ${show && "slide2"}`}>
             <h2 className="mt-2" style={{ fontWeight: "600" }}>
               Abstract
             </h2>

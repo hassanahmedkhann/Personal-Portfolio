@@ -98,12 +98,12 @@
 .hamber {
   position: absolute;
   right: 1.5rem;
-  top: 0.75rem;
+  top: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 20px;
+  height: 25px;
   cursor: pointer;
   display: flex;
 }
